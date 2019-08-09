@@ -14,9 +14,12 @@ import (
 // KongStateToFile writes a state object to file with filename.
 // It will omit timestamps and IDs while writing.
 func KongStateToFile(kongState *state.KongState,
-	selectTags []string, filename string) error {
+	selectTags []string, workspace, filename string) error {
 	var file Content
 
+	if workspace != "" {
+		file.Workspace = workspace
+	}
 	services, err := kongState.Services.GetAll()
 	if err != nil {
 		return err

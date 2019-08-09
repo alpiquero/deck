@@ -7,9 +7,14 @@ import (
 	"github.com/hbagdi/deck/file"
 	"github.com/hbagdi/deck/utils"
 	"github.com/spf13/cobra"
+	"net/url"
+	"path"
 )
 
-var dumpCmdKongStateFile string
+var (
+	dumpCmdKongStateFile string
+	dumpWorkspace        string
+)
 
 // dumpCmd represents the dump command
 var dumpCmd = &cobra.Command{
@@ -21,6 +26,16 @@ and writes them to a file on disk.
 The file can then be read using the Sync o Diff command to again
 configure Kong.`,
 	RunE: func(cmd *cobra.Command, args []string) error {
+
+		if dumpWorkspace != "" {
+			u, err := url.Parse(config.Address)
+			if err != nil {
+				return err
+			}
+			u.Path = path.Join(u.Path, dumpWorkspace)
+			config.Address = u.String()
+		}
+
 		client, err := utils.GetKongClient(config)
 		if err != nil {
 			return err
@@ -31,7 +46,7 @@ configure Kong.`,
 			return err
 		}
 		if err := file.KongStateToFile(ks, dumpConfig.SelectorTags,
-			dumpCmdKongStateFile); err != nil {
+			dumpWorkspace, dumpCmdKongStateFile); err != nil {
 			return err
 		}
 		return nil
@@ -43,6 +58,9 @@ func init() {
 	dumpCmd.Flags().StringVarP(&dumpCmdKongStateFile, "output-file", "o",
 		"kong.yaml", "write Kong configuration to FILE. "+
 			"Use '-' to write to stdout.")
+	dumpCmd.Flags().StringVarP(&dumpWorkspace, "workspace", "w",
+		"", "dump configuration of a specific workspace"+
+			"(Kong Enterprise only).")
 	dumpCmd.Flags().BoolVar(&dumpConfig.SkipConsumers, "skip-consumers",
 		false, "skip exporting consumers and any plugins associated "+
 			"with consumers")
