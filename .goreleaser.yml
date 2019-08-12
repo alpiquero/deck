@@ -3,9 +3,6 @@ builds:
   - CGO_ENABLED=0
   goos:
   - linux
-  - darwin
-  - windows
-  - freebsd
   goarch:
   - amd64
   asmflags:
@@ -24,16 +21,3 @@ nfpms:
    license: Apache License v2.0
    formats:
    - deb
-   - rpm
-brews:
--  github:
-     owner: hbagdi
-     name: homebrew-deck
-   commit_author:
-     name: Harry Bagdi
-     email: harrybagdi@gmail.com
-   homepage: "https://github.com/alpiquero/deck"
-   description: Declarative configuration for Kong
-   skip_upload: true
-   test: |
-       system "#{bin}/program --version"
