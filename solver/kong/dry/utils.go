@@ -3,8 +3,8 @@ package dry
 import (
 	"encoding/json"
 
-	"github.com/hbagdi/deck/crud"
-	arg "github.com/hbagdi/deck/diff"
+	"github.com/alpiquero/deck/crud"
+	arg "github.com/alpiquero/deck/diff"
 	diff "github.com/yudai/gojsondiff"
 	"github.com/yudai/gojsondiff/formatter"
 )

@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hbagdi/deck/dump"
-	"github.com/hbagdi/deck/reset"
-	"github.com/hbagdi/deck/utils"
+	"github.com/alpiquero/deck/dump"
+	"github.com/alpiquero/deck/reset"
+	"github.com/alpiquero/deck/utils"
 	"github.com/spf13/cobra"
 )
 

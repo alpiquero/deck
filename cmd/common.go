@@ -1,6 +1,6 @@
 package cmd
 
-import "github.com/hbagdi/deck/dump"
+import "github.com/alpiquero/deck/dump"
 
 var stopChannel chan struct{}
 

@@ -2,7 +2,7 @@ package state
 
 import (
 	memdb "github.com/hashicorp/go-memdb"
-	"github.com/hbagdi/deck/state/indexers"
+	"github.com/alpiquero/deck/state/indexers"
 	"github.com/pkg/errors"
 )
 

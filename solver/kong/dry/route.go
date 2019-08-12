@@ -5,11 +5,11 @@
 package dry
 
 import (
-	"github.com/hbagdi/deck/crud"
-	"github.com/hbagdi/deck/diff"
-	"github.com/hbagdi/deck/print"
-	"github.com/hbagdi/deck/state"
-	"github.com/hbagdi/deck/utils"
+	"github.com/alpiquero/deck/crud"
+	"github.com/alpiquero/deck/diff"
+	"github.com/alpiquero/deck/print"
+	"github.com/alpiquero/deck/state"
+	"github.com/alpiquero/deck/utils"
 	"github.com/hbagdi/go-kong/kong"
 )
 

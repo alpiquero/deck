@@ -3,11 +3,11 @@
 package cmd
 
 import (
-	"github.com/hbagdi/deck/diff"
-	"github.com/hbagdi/deck/dump"
-	"github.com/hbagdi/deck/file"
-	"github.com/hbagdi/deck/solver"
-	"github.com/hbagdi/deck/utils"
+	"github.com/alpiquero/deck/diff"
+	"github.com/alpiquero/deck/dump"
+	"github.com/alpiquero/deck/file"
+	"github.com/alpiquero/deck/solver"
+	"github.com/alpiquero/deck/utils"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 )

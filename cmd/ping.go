@@ -5,7 +5,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/hbagdi/deck/utils"
+	"github.com/alpiquero/deck/utils"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 )
