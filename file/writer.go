@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hbagdi/deck/state"
-	"github.com/hbagdi/deck/utils"
+	"github.com/alpiquero/deck/state"
+	"github.com/alpiquero/deck/utils"
 	yaml "gopkg.in/yaml.v2"
 )
 

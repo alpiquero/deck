@@ -3,9 +3,9 @@
 package cmd
 
 import (
-	"github.com/hbagdi/deck/dump"
-	"github.com/hbagdi/deck/file"
-	"github.com/hbagdi/deck/utils"
+	"github.com/alpiquero/deck/dump"
+	"github.com/alpiquero/deck/file"
+	"github.com/alpiquero/deck/utils"
 	"github.com/spf13/cobra"
 )
 

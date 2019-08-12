@@ -1,7 +1,7 @@
 package reset
 
 import (
-	"github.com/hbagdi/deck/utils"
+	"github.com/alpiquero/deck/utils"
 	"github.com/hbagdi/go-kong/kong"
 	"github.com/pkg/errors"
 )

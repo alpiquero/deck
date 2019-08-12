@@ -1,8 +1,8 @@
 package dump
 
 import (
-	"github.com/hbagdi/deck/state"
-	"github.com/hbagdi/deck/utils"
+	"github.com/alpiquero/deck/state"
+	"github.com/alpiquero/deck/utils"
 	"github.com/hbagdi/go-kong/kong"
 	"github.com/pkg/errors"
 )

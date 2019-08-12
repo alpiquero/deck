@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/hbagdi/deck/state"
+	"github.com/alpiquero/deck/state"
 	"github.com/hbagdi/go-kong/kong"
 )
 

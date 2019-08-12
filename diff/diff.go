@@ -5,8 +5,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/hbagdi/deck/crud"
-	"github.com/hbagdi/deck/state"
+	"github.com/alpiquero/deck/crud"
+	"github.com/alpiquero/deck/state"
 	"github.com/pkg/errors"
 )
 

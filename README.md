@@ -2,7 +2,7 @@
 
 decK is a CLI tool to configure Kong declaratively using a single config file.
 
-[![Build Status](https://travis-ci.com/hbagdi/deck.svg?branch=master)](https://travis-ci.com/hbagdi/deck)
+[![Build Status](https://travis-ci.com/alpiquero/deck.svg?branch=master)](https://travis-ci.com/alpiquero/deck)
 
 [![asciicast](https://asciinema.org/a/238318.svg)](https://asciinema.org/a/238318)
 
@@ -63,16 +63,16 @@ _format_version: "1.1"
 If you are on macOS, install decK using brew:
 
 ```shell
-$ brew tap hbagdi/deck
+$ brew tap alpiquero/deck
 $ brew install deck
 ```
 
 If you are Linux, you can either use the Debian or RPM archive from
-the Github [release page](https://github.com/hbagdi/deck/releases)
+the Github [release page](https://github.com/alpiquero/deck/releases)
 or install by downloading the binary:
 
 ```shel
-$ curl -sL https://github.com/hbagdi/deck/releases/download/v0.4.0/deck_0.4.0_linux_amd64.tar.gz -o deck.tar.gz
+$ curl -sL https://github.com/alpiquero/deck/releases/download/v0.4.0/deck_0.4.0_linux_amd64.tar.gz -o deck.tar.gz
 $ tar -xf deck.tar.gz -C /tmp
 $ cp /tmp/deck /usr/local/bin/
 ```
@@ -80,12 +80,12 @@ $ cp /tmp/deck /usr/local/bin/
 ### Docker image
 
 ```
-docker pull hbagdi/deck
+docker pull alpiquero/deck
 ```
 
 ## Roadmap
 
-Please see [issues](https://github.com/hbagdi/deck/issues)
+Please see [issues](https://github.com/alpiquero/deck/issues)
 section for upcoming release milestones and features requests.
 
 ## License

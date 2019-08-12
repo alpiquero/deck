@@ -1,10 +1,10 @@
 package solver
 
 import (
-	"github.com/hbagdi/deck/crud"
-	"github.com/hbagdi/deck/diff"
-	cruds "github.com/hbagdi/deck/solver/kong"
-	drycrud "github.com/hbagdi/deck/solver/kong/dry"
+	"github.com/alpiquero/deck/crud"
+	"github.com/alpiquero/deck/diff"
+	cruds "github.com/alpiquero/deck/solver/kong"
+	drycrud "github.com/alpiquero/deck/solver/kong/dry"
 	"github.com/hbagdi/go-kong/kong"
 	"github.com/pkg/errors"
 )
